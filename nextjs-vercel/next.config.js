@@ -1,14 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async redirects() {
-        return [
-            {
-                source: "/",
-                destination: "/products",
-                permanent: true,
-            }
-        ]
-    }
-}
-
-module.exports = nextConfig
+    reactStrictMode: true,
+    images: {
+      domains: ['res.cloudinary.com'], // Si estás usando Cloudinary
+    },
+  };
+  
+  module.exports = nextConfig;
+  
